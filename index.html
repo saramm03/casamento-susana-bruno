@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susana & Bruno</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  text-align: center;
+  background: #ffe6eb;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Música -->
+<audio id="musica" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="section">
+  <h1>Susana & Bruno 💍</h1>
+  <button onclick="start()">Entrar</button>
+</div>
+
+<script>
+function start() {
+  document.getElementById("musica").play();
+}
+</script>
+
+</body>
+</html>
